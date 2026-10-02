@@ -125,3 +125,11 @@ footer a{color:#8fd6d6}
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important}
 }
+
+.story{border-left:5px solid #d97706}
+.story .kicker{font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#b45309;margin:0 0 .3rem}
+.story h2{margin:.1rem 0 .8rem}
+.story-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin:.6rem 0}
+.story-grid h3{margin:.2rem 0 .4rem;font-size:1rem}
+.story-grid p{margin:0;font-size:.95rem}
+.story-gap{background:#fef3c7;border-radius:10px;padding:.8rem 1rem;font-size:.95rem;margin:.8rem 0 0}
