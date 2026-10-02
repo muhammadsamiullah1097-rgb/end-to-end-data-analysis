@@ -1,0 +1,127 @@
+/* Pakistan Floods 2022 — End-to-End Data Story. Mobile-first, plain design. */
+:root{
+  --ink:#10212b; --muted:#4c6472; --bg:#f6f4ee; --card:#ffffff;
+  --teal:#0e6e6e; --teal-d:#0a4f4f; --amber:#e8930c; --amber-d:#b96f04;
+  --red:#c0392b; --green:#1e7e34; --line:#e3ded2;
+  --radius:14px; --max:1060px;
+  --shadow:0 2px 10px rgba(16,33,43,.08);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:"Segoe UI",system-ui,-apple-system,Roboto,"Noto Sans",Arial,sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.65;font-size:17px}
+h1,h2,h3{line-height:1.25;margin:0 0 .5em}
+h1{font-size:clamp(1.6rem,5vw,2.6rem)}
+h2{font-size:clamp(1.25rem,4vw,1.7rem)}
+h3{font-size:1.08rem}
+p{margin:.5em 0}
+a{color:var(--teal)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:8px;z-index:50}
+.skip:focus{left:8px}
+
+/* header */
+.topbar{background:linear-gradient(135deg,var(--teal-d),var(--teal));color:#fff;padding:26px 0 20px}
+.topbar h1{margin-bottom:.3em}
+.tagline{opacity:.92;margin:.2em 0 .8em;max-width:60ch}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin:.6em 0}
+.badge{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.45);
+  color:#fff;border-radius:999px;padding:4px 12px;font-size:.82rem}
+.badge.solid{background:var(--amber);border-color:var(--amber);color:#201503;font-weight:700}
+
+/* audience toggle */
+.audbar{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.audbar .wrap{display:flex;align-items:center;gap:10px;padding-top:10px;padding-bottom:10px;flex-wrap:wrap}
+.audbar .lbl{font-weight:700;font-size:.95rem}
+.seg{display:inline-flex;background:#eef2f1;border-radius:999px;padding:3px}
+.seg button{border:0;background:transparent;padding:8px 16px;border-radius:999px;font-size:.95rem;cursor:pointer;color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--teal);color:#fff;font-weight:700}
+.seg button:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+
+/* stage nav */
+.stagenav{background:#fff;border-bottom:1px solid var(--line)}
+.stagenav .wrap{display:flex;gap:8px;overflow-x:auto;padding-top:12px;padding-bottom:12px;-webkit-overflow-scrolling:touch}
+.stagebtn{flex:0 0 auto;border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 14px;
+  cursor:pointer;font-size:.92rem;color:var(--muted)}
+.stagebtn .n{display:inline-block;background:#eef2f1;border-radius:50%;width:24px;height:24px;line-height:24px;
+  text-align:center;font-size:.8rem;font-weight:700;margin-right:6px}
+.stagebtn[aria-current="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.stagebtn[aria-current="true"] .n{background:var(--amber);color:#201503}
+.progress{height:5px;background:#e8e4d8}
+.progress i{display:block;height:100%;background:var(--amber);width:20%;transition:width .3s}
+
+/* cards & sections */
+main{padding:22px 0 60px}
+.stage{display:none}
+.stage.active{display:block;animation:fade .25s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px;margin:14px 0;box-shadow:var(--shadow)}
+.card h2:first-child,.card h3:first-child{margin-top:0}
+.kicker{color:var(--teal);font-weight:700;text-transform:uppercase;font-size:.78rem;letter-spacing:.06em}
+.bigstat{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:14px 0}
+.stat{background:#f2f7f6;border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center}
+.stat b{display:block;font-size:1.5rem;color:var(--teal-d)}
+.stat span{font-size:.85rem;color:var(--muted)}
+.takeaway{background:#fff8e8;border-left:5px solid var(--amber);padding:10px 14px;border-radius:0 10px 10px 0;margin:12px 0}
+.takeaway b{color:var(--amber-d)}
+.limit{background:#fdf1f0;border-left:5px solid var(--red);padding:10px 14px;border-radius:0 10px 10px 0;margin:12px 0}
+.note{background:#eef6f6;border-left:5px solid var(--teal);padding:10px 14px;border-radius:0 10px 10px 0;margin:12px 0}
+ul.tight li,ol.tight li{margin-bottom:.45em}
+
+/* tables */
+.twrap{overflow-x:auto;margin:10px 0;border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:.88rem;min-width:560px;background:#fff}
+caption{text-align:left;font-weight:700;padding:10px 12px;background:#f7f5ee}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#eef2f1;position:sticky;top:0}
+tr:nth-child(even) td{background:#faf9f5}
+.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.pill{display:inline-block;border-radius:999px;padding:2px 10px;font-size:.78rem;font-weight:700;white-space:nowrap}
+.pill.big{background:#f8d7d2;color:#8e1f14}
+.pill.part{background:#fdeccb;color:#8a5203}
+.pill.ok{background:#d7efdc;color:#145a24}
+.pill.none{background:#e8e4d8;color:#5c5646}
+
+/* toggle */
+.togglebar{display:flex;gap:8px;margin:10px 0;flex-wrap:wrap}
+.togglebar button{border:1px solid var(--teal);background:#fff;color:var(--teal);border-radius:999px;
+  padding:8px 16px;cursor:pointer;font-weight:600}
+.togglebar button[aria-pressed="true"]{background:var(--teal);color:#fff}
+
+/* charts */
+.chartbox{position:relative;margin:8px 0}
+canvas{max-width:100%}
+.chartfallback{display:none}
+
+/* pager */
+.pager{display:flex;justify-content:space-between;gap:10px;margin:22px 0}
+.pager button{background:var(--ink);color:#fff;border:0;border-radius:10px;padding:12px 20px;
+  font-size:1rem;cursor:pointer}
+.pager button[disabled]{opacity:.35;cursor:default}
+.pager button.next{background:var(--teal)}
+
+/* findings */
+.finding{border:1px solid var(--line);border-radius:12px;padding:14px;margin:10px 0;background:#fff}
+.finding h3{margin:0 0 .3em;color:var(--teal-d)}
+.aud-only{display:none}
+body[data-aud="official"] .aud-official{display:block}
+body[data-aud="citizen"] .aud-citizen{display:block}
+
+/* export */
+.exports{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0}
+.btn{display:inline-block;background:var(--teal);color:#fff;text-decoration:none;border-radius:10px;
+  padding:10px 18px;font-weight:600;border:0;cursor:pointer;font-size:.95rem}
+.btn.alt{background:#fff;color:var(--teal);border:1px solid var(--teal)}
+.btn:hover{filter:brightness(1.06)}
+
+footer{background:var(--ink);color:#cfd8dc;padding:26px 0;font-size:.9rem}
+footer a{color:#8fd6d6}
+.src{font-size:.85rem;color:#9fb3ba}
+
+@media (min-width:720px){
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+}

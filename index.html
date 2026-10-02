@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pakistan Floods 2022 — An End-to-End Data Story</title>
+<meta name="description" content="A complete, honest data analysis of the 2022 Pakistan floods: which districts were hit hardest and where relief fell short. Real UNOSAT satellite data and OCHA relief records.">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body data-aud="citizen">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <p class="kicker" style="color:#ffd98a">End-to-end data analysis · real data, no guessing</p>
+    <h1>Pakistan Floods 2022: which areas were hit hardest, and where did relief fall short?</h1>
+    <p class="tagline">A full analysis in 5 simple stages — from the raw files to the final answer — built on real satellite measurements (UNOSAT) and real relief records (OCHA). Written so anyone can follow it.</p>
+    <div class="badges">
+      <span class="badge solid">📦 Data snapshot — not live</span>
+      <span class="badge">160 districts analysed</span>
+      <span class="badge">91,094 relief records cleaned</span>
+      <span class="badge">Sources: UNOSAT · OCHA Pakistan</span>
+    </div>
+  </div>
+</header>
+
+<div class="audbar">
+  <div class="wrap">
+    <span class="lbl" id="audlbl">Reading as:</span>
+    <div class="seg" role="group" aria-labelledby="audlbl">
+      <button type="button" id="audCitizen" aria-pressed="true">🧑 Citizen — simple words</button>
+      <button type="button" id="audOfficial" aria-pressed="false">🏛️ Official / NGO — full detail</button>
+    </div>
+  </div>
+</div>
+
+<nav class="stagenav" aria-label="Analysis stages">
+  <div class="wrap" id="stageTabs">
+    <button class="stagebtn" data-stage="0" aria-current="true"><span class="n">1</span>The Question</button>
+    <button class="stagebtn" data-stage="1" aria-current="false"><span class="n">2</span>Raw Data</button>
+    <button class="stagebtn" data-stage="2" aria-current="false"><span class="n">3</span>Cleaning</button>
+    <button class="stagebtn" data-stage="3" aria-current="false"><span class="n">4</span>Exploration</button>
+    <button class="stagebtn" data-stage="4" aria-current="false"><span class="n">5</span>Findings</button>
+  </div>
+  <div class="progress" aria-hidden="true"><i id="prog"></i></div>
+</nav>
+
+<main id="main" class="wrap">
+
+<!-- ==================== STAGE 1: THE QUESTION ==================== -->
+<section class="stage active" id="stage0" aria-label="Stage 1: The Question">
+  <div class="card">
+    <p class="kicker">Stage 1 of 5</p>
+    <h2>The question we are answering</h2>
+    <p style="font-size:1.15rem"><strong>“Which districts of Pakistan were hit hardest by the 2022 floods — and did relief reach the places that needed it most?”</strong></p>
+    <p>To answer it honestly, we break it into three smaller questions:</p>
+    <ol class="tight">
+      <li><strong>Where was the damage worst?</strong> — measured by satellite: how much land went under water (km²), and how many people lived in the flooded area.</li>
+      <li><strong>Where did relief go?</strong> — from 91,094 real relief-activity records: how many people were reached, in which district, by whom.</li>
+      <li><strong>Where is the gap?</strong> — districts with heavy flooding but little or no recorded relief.</li>
+    </ol>
+  </div>
+  <div class="card">
+    <h3>Headline numbers (from the data itself)</h3>
+    <div class="bigstat">
+      <div class="stat"><b>31.3M</b><span>people lived in flooded areas (UNOSAT, Aug 2022)</span></div>
+      <div class="stat"><b>83,557 km²</b><span>maximum land under water — larger than Khyber Pakhtunkhwa</span></div>
+      <div class="stat"><b>160</b><span>districts measured by satellite</span></div>
+      <div class="stat"><b>133</b><span>districts with recorded relief work</span></div>
+    </div>
+    <div class="note"><strong>Plain words:</strong> about 1 in every 7 people in Pakistan lived in an area the satellites saw under water. Sindh was hit by far the worst, then Punjab.</div>
+  </div>
+  <div class="card">
+    <h3>What this analysis covers</h3>
+    <ul class="tight">
+      <li><strong>Time:</strong> floods June–November 2022 (satellite windows), relief work August 2022–December 2023.</li>
+      <li><strong>Place:</strong> all of Pakistan, district by district.</li>
+      <li><strong>Method:</strong> read the raw files → clean the mess → explore with charts → write findings. Every step is shown, including the cleaning most projects hide.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ==================== STAGE 2: RAW DATA ==================== -->
+<section class="stage" id="stage1" aria-label="Stage 2: Raw Data" hidden>
+  <div class="card">
+    <p class="kicker">Stage 2 of 5</p>
+    <h2>The raw data — straight from the source</h2>
+    <p>Nothing here is invented. These are the two real files this whole analysis is built on. Both are free public datasets.</p>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <p class="kicker">Source 1 — the damage (need)</p>
+      <h3>UNOSAT flood satellite assessment</h3>
+      <p><strong>Exact title:</strong> “Preliminary Satellite Derived Flood Evolution Assessment, Islamic Republic of Pakistan — 22 October 2022”</p>
+      <p><strong>Publisher:</strong> United Nations Satellite Centre (UNOSAT)</p>
+      <p><strong>What it holds:</strong> for every district — land area, population, maximum flooded area (km²) and people living in flooded areas, across 9 satellite time windows (Aug–Nov 2022).</p>
+      <p><strong>File:</strong> XLSX, 3 sheets (province / district / tehsil), district sheet = 175 rows × 55 columns.</p>
+      <p><a href="https://data.humdata.org/dataset/740ff03f-5bf9-49b1-a125-a1e3ad114938" target="_blank" rel="noopener">Open on HDX (data.humdata.org) ↗</a></p>
+      <p class="src">Licence: CC BY-SA 4.0 · Snapshot used: October 2022 assessment, downloaded 2 Oct 2026</p>
+    </div>
+    <div class="card">
+      <p class="kicker">Source 2 — the relief (response)</p>
+      <h3>OCHA Pakistan 5W relief records</h3>
+      <p><strong>Exact title:</strong> “Pakistan: Who does What, Where, When and for Whom (5W)” — resource <em>PAK_5W_Aug 22 to Dec 23</em></p>
+      <p><strong>Publisher:</strong> OCHA Pakistan</p>
+      <p><strong>What it holds:</strong> 91,094 relief-activity rows, every one tagged “Monsoon Floods 2022”: district, sector, organisation, households reached, beneficiaries reached, people targeted, activity status.</p>
+      <p><strong>File:</strong> XLSX, 91,094 rows × 75 columns.</p>
+      <p><a href="https://data.humdata.org/dataset/41cfeb67-7eee-434a-8687-0670eb50ebb3" target="_blank" rel="noopener">Open on HDX (data.humdata.org) ↗</a></p>
+      <p class="src">Licence: CC BY-SA 4.0 · Snapshot used: Aug 2022–Dec 2023 file, downloaded 2 Oct 2026</p>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Sample of the raw satellite file <span class="pill none">unedited — mess included</span></h3>
+    <p>Notice: province names sitting inside the district list (“Balochistan”, “Azad Kashmir (2)”), and numbers like <code>877964.6739099998</code>. Real files are messy — stage 3 shows how we fixed it.</p>
+    <div class="twrap"><table id="rawUnosat"><caption>First rows of the raw UNOSAT district sheet</caption><tbody><tr><td>Loading…</td></tr></tbody></table></div>
+  </div>
+  <div class="card">
+    <h3>Sample of the raw relief file <span class="pill none">unedited — mess included</span></h3>
+    <p>Notice the column literally named <code>PROVINCE␣</code> (with a trailing space), and the same province written as “Sindh”, “SINDH” and “&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SINDH”.</p>
+    <div class="twrap"><table id="rawW5"><caption>First rows of the raw OCHA 5W file (key columns)</caption><tbody><tr><td>Loading…</td></tr></tbody></table></div>
+  </div>
+</section>
+
+<!-- ==================== STAGE 3: CLEANING ==================== -->
+<section class="stage" id="stage2" aria-label="Stage 3: Cleaning" hidden>
+  <div class="card">
+    <p class="kicker">Stage 3 of 5</p>
+    <h2>Cleaning — the step everyone hides</h2>
+    <p>Most dashboards show you pretty charts but never the dirty work underneath. Here is every problem we found in the two real files, and exactly what we did about it. The cleaning is reproducible: <a href="scripts/clean_data.py"><code>scripts/clean_data.py</code></a> turns the raw downloads into the cleaned files, printing this same log.</p>
+    <div id="issueList"><p>Loading the cleaning log…</p></div>
+  </div>
+  <div class="card">
+    <h3>See it yourself: dirty vs clean</h3>
+    <div class="togglebar" role="group" aria-label="Dirty or clean table">
+      <button type="button" id="btnDirty" aria-pressed="true">🦠 Show dirty (raw)</button>
+      <button type="button" id="btnClean" aria-pressed="false">✨ Show clean</button>
+    </div>
+    <div class="twrap"><table id="dirtyClean"><caption id="dcCap">Raw UNOSAT rows — exactly as downloaded</caption><tbody><tr><td>Loading…</td></tr></tbody></table></div>
+    <div class="note" id="dcNote"><strong>What changed:</strong> province rows removed (used as labels), junk/footnote rows dropped, Islamabad duplicate removed, numbers rounded, one row per district.</div>
+  </div>
+  <div class="card">
+    <h3>Decisions we had to make (written down, not hidden)</h3>
+    <ul class="tight">
+      <li><strong>“Peak” value:</strong> the satellite file has 9 overlapping time windows. We took each district’s <em>maximum</em> flooded area and exposed population across the windows and call it the “peak”. Documented — not hidden.</li>
+      <li><strong>Joining the two files:</strong> district names didn’t match (“CENTRAL KARACHI” vs “Central Karachi”, “Shaheed Benazirabad” vs “Shaheed Benazir Abad”). We built a documented alias map; 133 districts matched.</li>
+      <li><strong>Missing numbers</strong> were left blank, never filled with 0 — blank means “not measured”.</li>
+      <li><strong>Coverage = beneficiaries reached ÷ people exposed.</strong> It can exceed 100% because one person can be helped by several activities and agencies report their own numbers. We say so instead of hiding it.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ==================== STAGE 3: EXPLORATION ==================== -->
+<section class="stage" id="stage3" aria-label="Stage 4: Exploration" hidden>
+  <div class="card">
+    <p class="kicker">Stage 4 of 5</p>
+    <h2>Exploration — what the cleaned data says</h2>
+    <p>Every chart below is computed from the cleaned files. Each one gets a one-line takeaway in plain words. If a chart can’t load, its data table is shown instead.</p>
+  </div>
+
+  <div class="card">
+    <h3>1 · People exposed, by province</h3>
+    <div class="chartbox"><canvas id="chProv" height="260" aria-label="Bar chart: exposed population by province"></canvas>
+      <div class="chartfallback" id="fbProv"></div></div>
+    <div class="takeaway"><b>Takeaway:</b> Sindh carried about 6 in every 10 exposed people; Punjab about 3 in 10. The two provinces together are over 90% of the human impact.</div>
+  </div>
+
+  <div class="card">
+    <h3>2 · The 10 worst-hit districts (people exposed)</h3>
+    <div class="chartbox"><canvas id="chTop" height="300" aria-label="Bar chart: top 10 districts by exposed population"></canvas>
+      <div class="chartfallback" id="fbTop"></div></div>
+    <div class="takeaway"><b>Takeaway:</b> 9 of the 10 worst-hit districts are in Sindh. Sialkot (Punjab) tops the list from a sharp August riverine flood that receded within weeks.</div>
+  </div>
+
+  <div class="card">
+    <h3>3 · Land under water, by province (km²)</h3>
+    <div class="chartbox"><canvas id="chLand" height="260" aria-label="Bar chart: flooded area by province"></canvas>
+      <div class="chartfallback" id="fbLand"></div></div>
+    <div class="takeaway"><b>Takeaway:</b> more than half of all flooded land in Pakistan was in Sindh — about 50,000 km², roughly the size of Punjab’s entire canal-irrigated belt.</div>
+  </div>
+
+  <div class="card">
+    <h3>4 · Need vs relief: the gap in the 10 worst-hit districts</h3>
+    <div class="chartbox"><canvas id="chGap" height="320" aria-label="Bar chart: exposed people versus beneficiaries reached"></canvas>
+      <div class="chartfallback" id="fbGap"></div></div>
+    <div class="takeaway"><b>Takeaway:</b> most worst-hit districts were reached — but Sialkot (1.8M exposed) shows 2 relief activities on record with <em>zero</em> beneficiaries reported reached, and Badin got relief for only about half its exposed people.</div>
+  </div>
+
+  <div class="card">
+    <h3>5 · What kind of relief was delivered (sectors)</h3>
+    <div class="chartbox"><canvas id="chSec" height="280" aria-label="Bar chart: relief sectors by number of districts"></canvas>
+      <div class="chartfallback" id="fbSec"></div></div>
+    <div class="takeaway"><b>Takeaway:</b> shelter, food and health went widest; specialised help (disability support, child protection) reached far fewer districts.</div>
+  </div>
+</section>
+
+<!-- ==================== STAGE 5: FINDINGS ==================== -->
+<section class="stage" id="stage4" aria-label="Stage 5: Findings" hidden>
+  <div class="card">
+    <p class="kicker">Stage 5 of 5</p>
+    <h2>Findings &amp; recommendations</h2>
+    <p class="aud-citizen aud-only">Simple words, real numbers. Every number below comes from the cleaned data.</p>
+    <p class="aud-official aud-only">Evidence-backed findings with exact figures, plus the gap table and export pack for planning.</p>
+  </div>
+
+  <div class="card aud-citizen aud-only">
+    <h3>🔎 What happened — in simple words</h3>
+    <div class="finding"><h3>1. Sindh suffered the most by far</h3><p>About 19 million people in Sindh lived in flooded areas — more than all other provinces combined. Districts like Khairpur, Dadu, Larkana, Badin and Jacobabad each had over a million people exposed.</p></div>
+    <div class="finding"><h3>2. Punjab was second — and partly missed</h3><p>About 9.8 million people exposed in Punjab, but relief records show only 5.7 million beneficiaries. Many Punjab districts with heavy flooding (Gujranwala, Muzaffargarh, Narowal, Sheikhupura) have <strong>no recorded relief rows at all</strong> — and Sialkot’s 2 recorded activities report zero people reached.</p></div>
+    <div class="finding"><h3>3. Relief did reach most worst-hit places</h3><p>Of the 10 worst-hit districts, 9 have large relief operations recorded. Dadu alone shows 3.4 million beneficiaries reached across 7,739 activities.</p></div>
+    <div class="finding"><h3>4. The biggest single gap: Sialkot</h3><p>1.8 million people exposed in August — the highest of any district — with 2 relief activities on record but <strong>zero beneficiaries reported reached</strong>. (Its flood was a short August spike that receded fast; still, the records show nobody counted as helped.)</p></div>
+    <div class="finding"><h3>5. Shelter, food and health went widest</h3><p>These three sectors reached 79–92 districts each. Help for people with disabilities and child protection reached far fewer places.</p></div>
+  </div>
+
+  <div class="card aud-citizen aud-only">
+    <h3>✅ What should happen next — for citizens</h3>
+    <ul class="tight">
+      <li>If you live in a district flagged with a gap (Gujranwala, Sujawal, Muzaffargarh, Narowal, Sialkot…), ask your local disaster office what relief was delivered — the official records show none, or nobody counted as reached.</li>
+      <li>Before every monsoon, follow official NDMA and PMD advisories; this analysis shows floods can peak in a single month (August 2022).</li>
+      <li>Community groups in Punjab’s riverine districts should register needs early — the data shows relief concentrated in Sindh and Balochistan.</li>
+    </ul>
+    <div class="limit"><strong>Honest limits:</strong> satellite pictures estimate flooding — they are not door-to-door counts. Relief records are reported by agencies themselves and can double-count people. This data cannot tell us about deaths, destroyed houses or livestock — those need NDMA’s records.</div>
+  </div>
+
+  <div class="card aud-official aud-only">
+    <h3>🔎 Findings — with figures</h3>
+    <div class="finding"><h3>F1 · Geographic concentration</h3><p>91.7% of exposed population sits in two provinces: Sindh 19.09M (59.8%), Punjab 9.82M (30.8%). Balochistan 1.28M, KP 1.66M.</p></div>
+    <div class="finding"><h3>F2 · Provincial relief imbalance</h3><p>Sindh: 24.78M beneficiaries vs 19.09M exposed (coverage 1.30 — inflated by double counting). Punjab: 5.69M vs 9.82M (coverage 0.58). Punjab is the priority gap at province level.</p></div>
+    <div class="finding"><h3>F3 · 27 districts with no relief rows + 12 with zero beneficiaries reported</h3><p>27 flood-hit districts have no rows at all in the 5W file, led by Gujranwala (652,954 exposed), Sujawal (635,053), Muzaffargarh (579,197), Narowal (576,082). Another 12 — led by Sialkot (1,813,308 exposed; 2 “Complete” activities, 0 beneficiaries) — have activities on paper but nobody counted as reached. Full list in the gap table below.</p></div>
+    <div class="finding"><h3>F4 · Partial gaps in reached districts</h3><p>35 more districts have coverage below 0.25 (e.g. Badin: 635,818 reached vs 1,274,371 exposed = 0.50 — partial). Median district coverage is 1.24, but the distribution is heavily skewed.</p></div>
+    <div class="finding"><h3>F5 · Sector skew</h3><p>Shelter/NFI (92 districts), Food Security &amp; Livelihoods (85), Health (82), WASH (79), Nutrition (77). Disability inclusion and child protection are the thinnest — check district-level sector lists in the export.</p></div>
+    <div class="finding"><h3>F6 · Data-quality note for planners</h3><p>Beneficiaries (46.6M) exceed exposed population (31.9M) — expected, since one person is counted once per activity. Treat coverage as a <em>relative</em> signal, not a literal percentage of people helped.</p></div>
+  </div>
+
+  <div class="card aud-official aud-only">
+    <h3>✅ Recommendations — for officials &amp; NGOs</h3>
+    <ul class="tight">
+      <li><strong>Verify the 27 zero-row districts</strong> (and the 12 with activities but zero beneficiaries reported) against PDMA/NDMA’s own distribution logs — if the 5W is simply missing reports, fix the reporting pipeline; if relief truly didn’t arrive, prioritise them in contingency plans.</li>
+      <li><strong>Rebalance toward Punjab’s riverine belt:</strong> pre-position shelter/NFI and WASH stocks for Sialkot, Gujranwala, Narowal, Sheikhupura, Muzaffargarh before the next monsoon.</li>
+      <li><strong>Close the sector gap:</strong> bundle disability screening and child-protection into every shelter/food distribution — the thin sectors ride free on the wide ones.</li>
+      <li><strong>Fix 5W hygiene:</strong> enforce a district dropdown (239 raw spellings → 133 real districts), mandatory province, numeric validation — the cleaning log shows exactly what breaks.</li>
+      <li><strong>Publish NDMA damage tables as open CSV</strong> (deaths, houses, livestock by district) — this analysis had to use satellite proxies because no open district-level damage CSV exists.</li>
+    </ul>
+  </div>
+
+  <div class="card aud-official aud-only">
+    <h3>📥 Export pack — cleaned data &amp; summary</h3>
+    <p>Download the exact files this analysis used. Free to reuse under the sources’ CC BY-SA 4.0 licences (credit UNOSAT and OCHA).</p>
+    <div class="exports">
+      <a class="btn" href="data/gap_analysis.csv" download>Gap analysis (CSV)</a>
+      <a class="btn" href="data/cleaned_district_flood.csv" download>Flood by district (CSV)</a>
+      <a class="btn" href="data/cleaned_relief_by_district.csv" download>Relief by district (CSV)</a>
+      <a class="btn" href="data/cleaning_log.json" download>Cleaning log (JSON)</a>
+      <button class="btn alt" id="btnSummary" type="button">📝 Download findings summary (TXT)</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>⚠️ What this data <em>cannot</em> tell us</h3>
+    <ul class="tight">
+      <li><strong>No deaths, injuries, destroyed houses or livestock</strong> — neither file contains them. Those live in NDMA’s sitreps, which are not published as open district-level CSVs.</li>
+      <li><strong>Satellite ≠ ground truth:</strong> flood extent comes from radar images; clouds and timing affect it. It estimates <em>exposure</em>, not confirmed damage.</li>
+      <li><strong>Relief records are self-reported</strong> by agencies; people helped by several activities are counted several times (that’s why beneficiaries exceed exposed people).</li>
+      <li><strong>Timing mismatch:</strong> flood windows are Aug–Nov 2022; relief records run to Dec 2023. A district flooded briefly in August (Sialkot) may have been helped later — or not.</li>
+      <li><strong>District peaks aren’t additive:</strong> peaks happened in different weeks, so don’t sum district peaks as a “total affected” — the national figure is UNOSAT’s own 31.25M.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>🗺️ Districts with big relief gaps</h3>
+    <p>Districts with satellite-measured flooding but little or no recorded relief — no relief rows at all, activities with zero beneficiaries reported, or coverage below 25% — sorted by people exposed.</p>
+    <div class="twrap"><table id="gapTable"><caption>Relief-gap districts</caption><tbody><tr><td>Loading…</td></tr></tbody></table></div>
+  </div>
+</section>
+
+<div class="pager">
+  <button type="button" id="prevBtn">← Previous</button>
+  <button type="button" id="nextBtn" class="next">Next →</button>
+</div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Data sources (exact):</strong></p>
+    <p class="src">1. UNOSAT — “Preliminary Satellite Derived Flood Evolution Assessment, Islamic Republic of Pakistan — 22 October 2022”, HDX: <a href="https://data.humdata.org/dataset/740ff03f-5bf9-49b1-a125-a1e3ad114938">data.humdata.org/dataset/740ff03f…</a> · CC BY-SA 4.0<br>
+    2. OCHA Pakistan — “Pakistan: Who does What, Where, When and for Whom (5W)” (resource PAK_5W_Aug 22 to Dec 23), HDX: <a href="https://data.humdata.org/dataset/41cfeb67-7eee-434a-8687-0670eb50ebb3">data.humdata.org/dataset/41cfeb67…</a> · CC BY-SA 4.0</p>
+    <p class="src">Snapshot of both datasets taken 2 Oct 2026 · figures are from those snapshots, not live · cleaning pipeline: <a href="scripts/clean_data.py">scripts/clean_data.py</a> · no data was invented at any step.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,117 @@
+{
+  "issues": [
+    {
+      "issue": "Raw district sheet has no real header separation",
+      "action": "Used first row as header; kept all 175 raw rows for inspection",
+      "count": 174
+    },
+    {
+      "issue": "Exact duplicate data rows",
+      "action": "Dropped duplicate rows (districts: Islamabad)",
+      "count": 1
+    },
+    {
+      "issue": "Junk rows from merged spreadsheet cells (satellite window labels glued into the district column)",
+      "action": "Dropped junk rows",
+      "count": 3
+    },
+    {
+      "issue": "Footnote/UN-disclaimer rows mixed into the data table",
+      "action": "Dropped footnote rows",
+      "count": 5
+    },
+    {
+      "issue": "Province names appear as rows inside the district table (e.g. 'Balochistan', 'Azad Kashmir (2)')",
+      "action": "Marked them as province headers; districts below each inherit it",
+      "count": 7
+    },
+    {
+      "issue": "Row read as a province header but with no districts under it",
+      "action": "Treated 'Islamabad' as a district of itself"
+    },
+    {
+      "issue": "9 overlapping satellite time windows (Aug-Nov 2022)",
+      "action": "Took the MAXIMUM flood extent and exposed population across windows as the district's 'peak' value (documented, not hidden)"
+    },
+    {
+      "issue": "Float precision artefacts (e.g. 877964.6739099998)",
+      "action": "Rounded areas to 1 decimal, people to whole numbers"
+    },
+    {
+      "issue": "Missing values in metric columns",
+      "action": "Left as blank (not filled with 0 — a blank means 'not measured')",
+      "count": 0
+    },
+    {
+      "issue": "Raw 5W workbook: 91k rows x 75 columns",
+      "action": "Kept only the columns needed for the analysis",
+      "count": 91094
+    },
+    {
+      "issue": "Column names are messy in the raw file",
+      "action": "Examples: column literally named 'PROVINCE ' (trailing space), 'IMPLEMENTNG PARTNER' (typo), 'GIRLS (0017 yrs)' (missing dash)"
+    },
+    {
+      "issue": "Same province spelled many ways",
+      "action": "'PROVINCE ' values included: 'Sindh' (46233), 'Balochistan' (13667), 'SINDH' (10488), 'Khyber Pakhtunkhwa' (7099), 'Punjab' (6117), 'BALOCHISTAN' (2863), 'KHYBER PAKHTUNKHWA' (2633), 'PUNJAB' (1812), 'GILGIT BALTISTAN' (134), '     SINDH' (25), 'balochistan' (8), 'Gilgit Baltistan' (7)",
+      "count": 16
+    },
+    {
+      "issue": "District column has case variants and non-district entries",
+      "action": "Examples: 'AWARAN' vs 'Awaran', 'CENTRAL KARACHI', 'CHITRAL LOWER'; normalised with the alias map",
+      "count": 239
+    },
+    {
+      "issue": "Non-numeric values in people targeted column",
+      "action": "Coerced to blank (NaN); treated as 0 in district sums",
+      "count": 1
+    },
+    {
+      "issue": "Activity-status spelled inconsistently",
+      "action": "Examples: 'Complete', 'Ongoing', 'Planned', 'ongoing', 'Ongoing '",
+      "count": 5
+    },
+    {
+      "issue": "District column collapsed from raw variants to canonical districts",
+      "action": "Grouped 91k activity rows by canonical district",
+      "count": 133
+    },
+    {
+      "issue": "Districts with relief reports but no UNOSAT flood record",
+      "action": "Kept in the table (exposed_pop = 0); they are real places with real relief — the satellite assessment simply did not cover them",
+      "count": 0
+    },
+    {
+      "issue": "Flood-hit districts with NO relief rows in the 5W file",
+      "action": "Flagged as 'BIG GAP — no relief rows at all' — a core finding",
+      "count": 27
+    },
+    {
+      "issue": "Districts WITH relief rows but 0 beneficiaries reported (activities exist on paper, nobody counted as reached — e.g. Sialkot: 2 'Complete' activities, 0 beneficiaries)",
+      "action": "Flagged as 'BIG GAP — relief rows exist, 0 beneficiaries reported'",
+      "count": 12
+    }
+  ],
+  "actions": [],
+  "sources": {
+    "unosat": {
+      "title": "Preliminary Satellite Derived Flood Evolution Assessment, Islamic Republic of Pakistan - 22 October 2022",
+      "publisher": "United Nations Satellite Centre (UNOSAT)",
+      "url": "https://data.humdata.org/dataset/740ff03f-5bf9-49b1-a125-a1e3ad114938",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 (HDX)"
+    },
+    "ocha_5w": {
+      "title": "Pakistan: Who does What, Where, When and for Whom (5W) — resource PAK_5W_Aug 22 to Dec 23",
+      "publisher": "OCHA Pakistan",
+      "url": "https://data.humdata.org/dataset/41cfeb67-7eee-434a-8687-0670eb50ebb3",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 (HDX)"
+    }
+  },
+  "outputs": {
+    "districts_flood": 160,
+    "districts_relief": 133,
+    "districts_joined": 160,
+    "total_exposed_pop": 31925639,
+    "total_beneficiaries": 46614289
+  }
+}

@@ -1,0 +1,134 @@
+join_key,district,province,beneficiaries_reached,households_reached,people_targeted,activities,sectors,lead_agencies,pct_complete
+dadu,Dadu,Sindh,3408112,204736,2601989,7739,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",66,72.3
+rajanpur,Rajanpur,Punjab,3391194,99664,2392247,4825,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",47,79.3
+kambarshahdadkot,Kambar Shahdad Kot,Sindh,2884455,145596,2043919,6390,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",46,79.2
+khairpur,Khairpur,Sindh,1984769,145089,3435727,8930,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",57,46.9
+jacobabad,Jacobabad,Sindh,1978404,89586,1405624,1820,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",34,71.0
+mirpurkhas,Mirpur Khas,Sindh,1907305,161554,2148225,2062,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Multi-purpose Cash; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",48,50.6
+deraghazikhan,Dera Ghazi Khan,Punjab,1762954,44497,1100944,2899,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",25,80.9
+umerkot,Umer Kot,Sindh,1761664,128333,2595894,3094,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",33,75.2
+sanghar,Sanghar,Sindh,1662918,97666,1689877,3495,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",41,85.4
+dikhan,D. I. Khan,Khyber Pakhtunkhwa,1618873,116167,1351759,2901,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",42,44.5
+jaffarabad,Jaffarabad,Balochistan,1505648,130237,1603919,2816,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",46,77.5
+nasirabad,Nasirabad,Balochistan,1409300,97690,1220302,2968,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",31,58.9
+naushahroferoze,Naushahro Feroze,Sindh,1351212,82113,900799,4893,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",27,70.8
+quetta,Quetta,Balochistan,1188206,136601,1330706,708,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Multi-purpose Cash; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",32,51.8
+swat,Swat,Khyber Pakhtunkhwa,1086077,82654,938874,1638,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",28,83.8
+sohbatpur,Sohbatpur,Balochistan,1043586,120568,776388,2026,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",24,58.4
+larkana,Larkana,Sindh,1039050,62773,539756,1991,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",31,52.1
+shikarpur,Shikarpur,Sindh,939754,80856,743890,1835,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",33,71.8
+lasbela,Lasbela,Balochistan,920596,99112,668796,2877,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",22,54.0
+jamshoro,Jamshoro,Sindh,883808,147291,494997,457,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Nutrition; Protection - Child Protection; Shelter/NFI; WASH",34,72.0
+shaheedbenazirabad,Shaheed Benazir Abad,Sindh,844776,38997,359212,2326,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",20,67.9
+kashmore,Kashmore,Sindh,831225,52128,523270,1049,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection - GBV; Shelter/NFI; WASH",15,64.6
+jhalmagsi,Jhal Magsi,Balochistan,676468,39264,698214,2401,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",30,57.3
+badin,Badin,Sindh,635818,45245,865960,1420,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",31,75.5
+thatta,Thatta,Sindh,620794,200052,384983,6375,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection - GBV; Shelter/NFI; WASH",23,58.6
+charsadda,Charsadda,Khyber Pakhtunkhwa,516162,25149,416495,1197,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",38,47.4
+killasaifullah,Killa Saifullah,Balochistan,495193,58473,392272,225,"Education; Food Security, Agriculture & Livelihoods; Health; Multi-Purpose Cash; Nutrition; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",17,75.6
+tank,Tank,Khyber Pakhtunkhwa,490804,27950,506591,1019,"Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",14,13.2
+chitralupper,Chitral Upper,Khyber Pakhtunkhwa,480243,47962,387897,41,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Nutrition; Shelter/NFI; WASH",14,51.2
+upperdir,Upper Dir,Khyber Pakhtunkhwa,475886,49184,455168,39,"Food Security, Agriculture & Livelihoods; Health; Nutrition; Shelter/NFI; WASH",9,89.7
+kachhi,Kachhi,Balochistan,439821,94614,353534,474,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection; Protection - GBV; Shelter/NFI; WASH",17,34.8
+sukkur,Sukkur,Sindh,400655,49223,364043,639,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",26,31.9
+nowshera,Nowshera,Khyber Pakhtunkhwa,396514,19985,421912,732,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",35,48.0
+peshawar,Peshawar,Khyber Pakhtunkhwa,381524,2832,746804,214,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",11,14.5
+hyderabad,Hyderabad,Sindh,356013,305521,355760,118,"Education; Food Security, Agriculture & Livelihoods; Health; Multi-Purpose Cash; Nutrition; Shelter/NFI; WASH",23,80.5
+ghotki,Ghotki,Sindh,353007,27222,146878,1507,"Education; Food Security, Agriculture & Livelihoods; Health; Multi-Purpose Cash; Nutrition; Shelter/NFI; WASH",15,48.2
+mianwali,Mianwali,Punjab,315846,3000,33800,18,"Food Security, Agriculture & Livelihoods; Nutrition; Protection - Child Protection; WASH",5,61.1
+matiari,Matiari,Sindh,304618,41698,203988,217,"Education; Food Security, Agriculture & Livelihoods; Health; Nutrition; Protection - GBV; Shelter/NFI; WASH",18,65.0
+pishin,Pishin,Balochistan,288634,23129,202720,296,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Multi-Purpose Cash; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",23,57.1
+killaabdullah,Killa Abdullah,Balochistan,197622,12984,203646,83,"Education; Food Security, Agriculture & Livelihoods; Health; Multi-Purpose Cash; Protection; Shelter/NFI; WASH",12,86.7
+khyber,Khyber,Khyber Pakhtunkhwa,195991,27185,132925,149,"Education; Food Security, Agriculture & Livelihoods",5,77.9
+malirkarachi,Malir Karachi,Sindh,181024,151000,196548,37,Education; Health; Nutrition; Protection - Child Protection; Shelter/NFI; WASH,7,48.6
+nushki,Nushki,Balochistan,156243,41315,235512,258,"Education; Food Security, Agriculture & Livelihoods; Health; Multi-Purpose Cash; Nutrition; Protection; Protection - Child Protection; Shelter/NFI; WASH",13,93.4
+sibi,Sibi,Balochistan,149895,11225,77914,723,"Education; Food Security, Agriculture & Livelihoods; Health; Health - SRH; Nutrition; Protection - GBV; Shelter/NFI; WASH",11,52.0
+orakzai,Orakzai,Khyber Pakhtunkhwa,146286,21896,90166,34,"Food Security, Agriculture & Livelihoods",2,41.2
+loralai,Loralai,Balochistan,146278,9069,126816,51,"Education; Food Security, Agriculture & Livelihoods; Health; Nutrition; Protection - Child Protection; Shelter/NFI; WASH",8,66.7
+kalat,Kalat,Balochistan,145632,20687,123545,51,"Food Security, Agriculture & Livelihoods; Health; Nutrition; Shelter/NFI",7,68.6
+kohistanupper,Kohistan Upper,Khyber Pakhtunkhwa,141840,10254,170560,170,"Food Security, Agriculture & Livelihoods; Health; Shelter/NFI; WASH",8,94.7
+tharparkar,Tharparkar,Sindh,136868,7437,63047,76,"Food Security, Agriculture & Livelihoods; Health; Nutrition; Shelter/NFI; WASH",14,84.2
+khuzdar,Khuzdar,Balochistan,130022,17124,121527,118,"Education; Food Security, Agriculture & Livelihoods; Health; Multi-Purpose Cash; Nutrition; Shelter/NFI; WASH",13,97.5
+chitrallower,Chitral Lower,Khyber Pakhtunkhwa,126378,17173,105664,34,"Food Security, Agriculture & Livelihoods; Health; Nutrition; Protection - Child Protection; Shelter/NFI; WASH",14,79.4
+lowerdir,Lower Dir,Khyber Pakhtunkhwa,107609,4139,30962,178,"Education; Food Security, Agriculture & Livelihoods; Nutrition; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",8,2.8
+muzaffargarh,Muzaffargarh,Punjab,104986,5815,55495,70,"Food Security, Agriculture & Livelihoods; Health; Health - SRH; Protection - GBV; Shelter/NFI; WASH",9,21.4
+sujawal,Sujawal,Sindh,79834,22725,50455,56,"Food Security, Agriculture & Livelihoods; Health; Nutrition; Shelter/NFI; WASH",14,75.0
+westkarachi,West Karachi,Sindh,65300,0,20400,6,Health; Nutrition; WASH,3,16.7
+chaman,Chaman,Balochistan,64494,1633,31108,80,"Education; Food Security, Agriculture & Livelihoods; Health; Nutrition; Protection - Child Protection; Shelter/NFI; WASH",4,27.5
+panjgur,Panjgur,Balochistan,56255,7898,57545,12,"Food Security, Agriculture & Livelihoods; Health; Nutrition",4,83.3
+mardan,Mardan,Khyber Pakhtunkhwa,54552,120,18106,66,Education; Nutrition; Protection - Child Protection; Shelter/NFI; WASH,7,19.7
+tandoallahyar,Tando Allahyar,Sindh,53825,2006,15085,64,"Education; Food Security, Agriculture & Livelihoods; Health; Nutrition; Shelter/NFI; WASH",22,71.9
+centralkarachi,Central Karachi,Sindh,50422,17069,71931,39,"Food Security, Agriculture & Livelihoods; Health; Multi-Purpose Cash; Nutrition; Protection; Protection - Child Protection; Shelter/NFI",11,53.8
+malakand,Malakand,Khyber Pakhtunkhwa,48576,0,104,50,Nutrition; Protection - Child Protection,4,20.0
+mohmand,Mohmand,Khyber Pakhtunkhwa,48146,6142,0,129,"Education; Food Security, Agriculture & Livelihoods",2,84.5
+buner,Buner,Khyber Pakhtunkhwa,46417,5200,53584,360,"Education; Food Security, Agriculture & Livelihoods; Protection - Child Protection; Protection - GBV",5,46.9
+ghizer,Ghizer,Gilgit-Baltistan,46216,6711,35252,88,"Food Security, Agriculture & Livelihoods; Health; Protection; Shelter/NFI; WASH",7,94.3
+leiah,Leiah,Punjab,43148,1000,37570,39,"Food Security, Agriculture & Livelihoods; Health; Health - SRH; Protection - GBV; Shelter/NFI; WASH",5,7.7
+shangla,Shangla,Khyber Pakhtunkhwa,42953,6600,48350,11,"Food Security, Agriculture & Livelihoods; Nutrition; Shelter/NFI",4,90.9
+tandomuhammadkhan,Tando Muhammad Khan,Sindh,42487,1817,11095,65,"Education; Food Security, Agriculture & Livelihoods; Health; Nutrition; Shelter/NFI; WASH",20,78.5
+derabugti,Dera Bugti,Balochistan,42202,0,0,5,Health; Nutrition,2,20.0
+chagai,Chagai,Balochistan,40179,5515,39545,16,"Education; Food Security, Agriculture & Livelihoods; Health; Protection - Child Protection",6,25.0
+astore,Astore,Gilgit-Baltistan,39312,5616,28000,8,Shelter/NFI,2,62.5
+kharan,Kharan,Balochistan,36783,4300,28000,118,"Food Security, Agriculture & Livelihoods; Health; Health - SRH; Nutrition; Protection - GBV; Shelter/NFI",5,8.5
+bahawalpur,Bahawalpur,Punjab,35790,86,24630,29,Health - SRH; Protection - GBV; Shelter/NFI; WASH,4,13.8
+washuk,Washuk,Balochistan,35690,4112,35614,14,"Food Security, Agriculture & Livelihoods; Health; Shelter/NFI; WASH",4,100.0
+karak,Karak,Khyber Pakhtunkhwa,35540,2880,47065,23,"Food Security, Agriculture & Livelihoods; Health; Nutrition; Shelter/NFI; WASH",4,87.0
+neelum,Neelum,Azad Jammu & Kashmir,35000,5000,35000,2,"Food Security, Agriculture & Livelihoods",1,100.0
+zhob,Zhob,Balochistan,34571,0,0,9,Nutrition,2,55.6
+bannu,Bannu,Khyber Pakhtunkhwa,33736,4907,46138,6,"Education; Food Security, Agriculture & Livelihoods; Health; Protection - Child Protection",6,50.0
+kurram,Kurram,Khyber Pakhtunkhwa,32507,5001,0,2,"Food Security, Agriculture & Livelihoods",1,100.0
+mansehra,Mansehra,Khyber Pakhtunkhwa,30200,3739,19390,59,"Education; Food Security, Agriculture & Livelihoods; Nutrition; Shelter/NFI; WASH",4,96.6
+kohistanlower,Kohistan Lower,Khyber Pakhtunkhwa,27649,3020,28249,23,"Food Security, Agriculture & Livelihoods; Health; Shelter/NFI; WASH",6,95.7
+swabi,Swabi,Khyber Pakhtunkhwa,25281,699,21712,220,"Education; Food Security, Agriculture & Livelihoods; Nutrition; Protection; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH",9,4.1
+mastung,Mastung,Balochistan,23120,1700,23469,12,"Food Security, Agriculture & Livelihoods; Health; Shelter/NFI; WASH",4,58.3
+lakkimarwat,Lakki Marwat,Khyber Pakhtunkhwa,22326,8,22006,49,Nutrition; Protection - Child Protection; Shelter/NFI; WASH,5,57.1
+southkarachi,South Karachi,Sindh,21805,272,21124,34,Health; Nutrition; Protection - Child Protection; WASH,5,70.6
+bahawalnagar,Bahawalnagar,Punjab,16600,2371,15400,4,"Food Security, Agriculture & Livelihoods; Shelter/NFI",2,100.0
+musakhel,Musakhel,Balochistan,16214,3214,27181,13,"Food Security, Agriculture & Livelihoods; Health; Nutrition; Shelter/NFI; WASH",7,84.6
+kech,Kech,Balochistan,15389,10890,18458,21,"Food Security, Agriculture & Livelihoods; Health; Nutrition; Shelter/NFI",7,81.0
+ghanche,Ghanche,Gilgit-Baltistan,14686,1900,14686,13,"Food Security, Agriculture & Livelihoods; Shelter/NFI; WASH",3,53.8
+muzaffarabad,Muzaffarabad,Azad Jammu & Kashmir,14138,2175,0,1,"Food Security, Agriculture & Livelihoods",1,100.0
+ziarat,Ziarat,Balochistan,14050,2000,14050,3,Shelter/NFI,1,100.0
+gupisyasin,Gupis-yasin,Gilgit-Baltistan,14000,2000,14000,5,Shelter/NFI,1,100.0
+skardu,Skardu,Gilgit-Baltistan,14000,2000,14000,3,Shelter/NFI,1,100.0
+kohat,Kohat,Khyber Pakhtunkhwa,13312,23,2963,211,Education; Nutrition; Protection - Child Protection; Protection - GBV; Shelter/NFI; WASH,4,74.9
+nagar,Nagar,Gilgit-Baltistan,12600,1800,0,4,Shelter/NFI,2,75.0
+awaran,Awaran,Balochistan,12451,800,3500,108,"Education; Food Security, Agriculture & Livelihoods; Health; Nutrition; Protection - Child Protection; Shelter/NFI",7,90.7
+bhimber,Bhimber,Azad Jammu & Kashmir,10400,1600,0,1,"Food Security, Agriculture & Livelihoods",1,100.0
+haripur,Haripur,Khyber Pakhtunkhwa,9538,192,394,128,Education; Nutrition; Protection - Child Protection; Shelter/NFI; WASH,3,26.6
+kohlu,Kohlu,Balochistan,8987,1335,5250,46,"Education; Food Security, Agriculture & Livelihoods; Health; Protection - Child Protection; Shelter/NFI; WASH",5,97.8
+vehari,Vehari,Punjab,7600,1086,7000,4,Shelter/NFI,2,100.0
+kasur,Kasur,Punjab,7400,1057,7000,7,Shelter/NFI,2,100.0
+gilgit,Gilgit,Gilgit-Baltistan,6360,1158,1125,10,"Food Security, Agriculture & Livelihoods; Health; Shelter/NFI; WASH",4,80.0
+tangir,Tangir,Gilgit-Baltistan,2250,0,2250,3,"Food Security, Agriculture & Livelihoods; Health",1,100.0
+bhakkar,Bhakkar,Punjab,2100,0,12600,4,WASH,3,25.0
+rahimyarkhan,Rahim Yar Khan,Punjab,1758,80,1808,4,Protection; Protection - Child Protection; WASH,2,75.0
+duki,Duki,Balochistan,1571,0,0,1,Health,1,100.0
+hangu,Hangu,Khyber Pakhtunkhwa,1256,67,77,25,Education; Nutrition; Protection - Child Protection; Shelter/NFI; WASH,3,72.0
+harnai,Harnai,Balochistan,1174,0,0,5,Health; Nutrition,2,100.0
+barkhan,Barkhan,Balochistan,873,0,0,6,Health; Nutrition,2,100.0
+diamir,Diamir,Gilgit-Baltistan,618,420,0,4,"Food Security, Agriculture & Livelihoods; Shelter/NFI",2,75.0
+faisalabad,Faisalabad,Punjab,600,86,0,2,Protection - Child Protection; Shelter/NFI,2,100.0
+lahore,Lahore,Punjab,359,0,0,3,Health; Protection - Child Protection,2,100.0
+lehri,Lehri,Balochistan,286,300,0,2,Nutrition; Shelter/NFI,2,50.0
+abbottabad,Abbottabad,Khyber Pakhtunkhwa,201,0,0,10,Nutrition,1,100.0
+gwadar,Gwadar,Balochistan,200,0,0,2,Health,2,50.0
+batagram,Batagram,Khyber Pakhtunkhwa,112,0,0,8,Nutrition,1,100.0
+sheikhupura,Sheikhupura,Punjab,105,0,105,1,WASH,1,100.0
+okara,Okara,Punjab,100,14,0,1,Shelter/NFI,1,100.0
+gujrat,Gujrat,Punjab,67,67,67,2,Protection; Protection - Child Protection,1,100.0
+chakwal,Chakwal,Punjab,56,112,56,3,Protection; Protection - Child Protection,1,66.7
+multan,Multan,Punjab,2,0,0,1,Health - SRH,1,0.0
+khushab,Khushab,Punjab,0,0,0,1,Protection - Child Protection,1,100.0
+attock,Attock,Punjab,0,0,0,1,Protection - Child Protection,1,100.0
+kolaipalaskohistan,Kolai Palas Kohistan,Khyber Pakhtunkhwa,0,250,250,1,Health,1,0.0
+korangikarachi,Korangi Karachi,Sindh,0,0,0,3,Health,1,0.0
+kotli,Kotli,Azad Jammu & Kashmir,0,0,0,1,WASH,1,100.0
+kharmang,Kharmang,Gilgit-Baltistan,0,0,0,1,Shelter/NFI,1,0.0
+eastkarachi,East Karachi,Sindh,0,0,400,10,Health; Protection - Child Protection,2,0.0
+hunza,Hunza,Gilgit-Baltistan,0,0,0,1,Shelter/NFI,1,0.0
+rawalpindi,Rawalpindi,Punjab,0,0,0,1,Protection - Child Protection,1,100.0
+jhang,Jhang,Punjab,0,0,200,4,WASH,1,0.0
+sialkot,Sialkot,Punjab,0,0,0,2,Health; Protection - Child Protection,2,100.0
+jhelum,Jhelum,Punjab,0,0,0,1,Protection - Child Protection,1,100.0
+shigar,Shigar,Gilgit-Baltistan,0,0,0,1,Shelter/NFI,1,0.0
